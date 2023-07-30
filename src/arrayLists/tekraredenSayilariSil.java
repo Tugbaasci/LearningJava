@@ -1,6 +1,7 @@
 package arrayLists;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class tekraredenSayilariSil {
@@ -17,6 +18,11 @@ public class tekraredenSayilariSil {
             }
         }
         System.out.println(tekrarsizList);
+        arr = new int[tekrarsizList.size()];
+        for (int i = 0; i < arr.length; i++) {
+            arr[i]= tekrarsizList.get(i);
+        }
+        System.out.println(Arrays.toString(arr));
 
 }
 }
