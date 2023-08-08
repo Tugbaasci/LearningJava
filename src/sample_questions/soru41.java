@@ -1,6 +1,6 @@
 package sample_questions;
 
-public class soru41Coz {
+public class soru41 {
     public static void main(String[] args) {
         /*
         Parametre olarak birden fazla tamsayı (integer) kabul eden
@@ -13,5 +13,13 @@ public class soru41Coz {
 	    sum(1,2) output=3
         Ipucu:  varargs sorusu, varargs olusturalım
          */
+        toplamaVarargs(1,2,3,4,5,6,7,8,9);
+    }
+    public static void toplamaVarargs(int... sayi){
+        int toplam=0;
+        for (int i = 0; i < sayi.length ; i++) {
+            toplam+=sayi[i];
+        }
+        System.out.println("verilen sayilarin toplami: "+ toplam);
     }
 }
