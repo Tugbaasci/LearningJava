@@ -22,7 +22,7 @@ public class soru43coz {
         String ad= scanner.next();
         String soyad= scanner.next();
         int okulNo=12345678;
-        rename(changeName(ad),changeSurname(soyad));
+       // rename(changeName(ad),changeSurname(soyad));
 
     }
     soru43coz(){
@@ -30,7 +30,7 @@ public class soru43coz {
         String oncekiSoyad="Toprak";
     }
     public static void rename(String a,String b){
-        System.out.println("Sistemdeki varolan eski isim: "+);
+        System.out.println("Sistemdeki varolan eski isim: ");
         soru43coz obj = new soru43coz();
     }
     public static void changeName(String ad){
