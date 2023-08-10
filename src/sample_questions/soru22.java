@@ -23,15 +23,16 @@ public class soru22 {
         System.out.println("Lütfen ebob ve ekok bulmak icin iki tamsayi giriniz:");
         int sayi1= scanner.nextInt();
         int sayi2= scanner.nextInt();
-        int ekokSayiSec = sayi1 >sayi2?sayi2:sayi1;
+        int ebobSayiSec = sayi1 >sayi2?sayi2:sayi1;
         int enBuyuk=1;
-        for (int i = 1; i <= ekokSayiSec; i++) {
+        for (int i = 1; i <= ebobSayiSec; i++) {
             if (sayi1%i==0 && sayi2%i==0){
                 if (i>enBuyuk){
                     enBuyuk=i;
                 }
             }
         }
+
         int ekok=(sayi2*sayi1)/enBuyuk;
         System.out.println("Girilen sayilar: "+sayi1+" & "+sayi2+"."+
                 "\nGirilen sayilarin ebob degeri: "+enBuyuk+" & ekok degeri: "+ekok);

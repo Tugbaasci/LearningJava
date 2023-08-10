@@ -1,6 +1,10 @@
 package sample_questions;
 
+import java.util.Scanner;
+
 public class soru43coz {
+    static Scanner scanner= new Scanner(System.in);
+    static String okulAdi="Sevgi okulu";
     public static void main(String[] args) {
         /*
         Main methodda ögrenci bilgileri oluşturun ve bu verileri kullanın.
@@ -14,5 +18,27 @@ public class soru43coz {
         Methodda kullanıcıya yeni bir lastname sorulsun ve
         eski lastname degiştirilsin.
          */
+
+        String ad= scanner.next();
+        String soyad= scanner.next();
+        int okulNo=12345678;
+        rename(changeName(ad),changeSurname(soyad));
+
+    }
+    soru43coz(){
+        String oncekiAd="Ekin";
+        String oncekiSoyad="Toprak";
+    }
+    public static void rename(String a,String b){
+        System.out.println("Sistemdeki varolan eski isim: "+);
+        soru43coz obj = new soru43coz();
+    }
+    public static void changeName(String ad){
+        System.out.println("ad parametreli cons. calisti");
+        ad="Tugba";
+    }
+    public static void changeSurname(String soyad){
+        System.out.println("soyad paraemterli cons cakisti");
+        soyad="Asci";
     }
 }
