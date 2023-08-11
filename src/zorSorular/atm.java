@@ -103,9 +103,10 @@ sifre değişiklik işlemini yapmali,
         }
     }
     public static void paraGonderme() {
-        System.out.println("Gondermek istediginiz IBAN Numarasini giriniz: ");
-        String iban = scanner.next().toUpperCase();
-        scanner.nextLine();
+        scanner= new Scanner(System.in);
+        System.out.println("IBAN GIRIN:");
+        String iban = scanner.nextLine().toUpperCase().
+                replace(" ","");
         if (iban.length()==26 && iban.startsWith("TR")){
             System.out.println("Lütfen gondermek istediginiz miktari giriniz");
             int miktar= scanner.nextInt();
