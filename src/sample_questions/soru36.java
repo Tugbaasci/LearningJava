@@ -1,5 +1,7 @@
 package sample_questions;
 
+import java.util.Scanner;
+
 public class soru36 {
     public static void main(String[] args) {
         /*
@@ -13,8 +15,16 @@ public class soru36 {
         Kendinizi geliştirme adına sorunun cevabını degişik
         yollardan yapabilir, Arrayi kullanıcıya oluşturabilirsiniz (Öneri..)
          */
-        int inputarr[]=   {1,2,3,5,6,7};
-        ortadakiSayi(inputarr);
+        Scanner scanner= new Scanner(System.in);
+        System.out.print("Array'in uzunlugunu giriniz: ");
+        int uzunluk= scanner.nextInt();
+        int[] arr = new int[uzunluk];
+        for (int i = 0; i < arr.length; i++) {
+            System.out.println("Array'in "+(i+1)+"nci elemanini giriniz:");
+            //scanner=new Scanner(System.in); burasi olsa da olmasa da calisiyor
+            arr[i]= scanner.nextInt();
+        }
+        ortadakiSayi(arr);
     }
     public static void ortadakiSayi(int[] arr){
         if (arr.length%2==0){
