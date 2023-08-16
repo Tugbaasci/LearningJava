@@ -22,6 +22,7 @@ public class isimleriListedenSonIndextenYaz {
             yeniList.add(isim.get(i));
             System.out.println((yeniList.indexOf(isim.get(i))+1)+".isim:"+isim.get(i));
         }
+        long sayi =132245336;
 
 
 
