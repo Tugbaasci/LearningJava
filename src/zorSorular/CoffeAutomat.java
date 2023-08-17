@@ -31,17 +31,28 @@ public class CoffeAutomat {
 
          */
         Scanner scanner= new Scanner(System.in);
-        scanner= new Scanner(System.in);
-        System.out.println("Hangi cesit kahve icmek istersiniz.\n1. Turk Kahvesi\n2. Filtre Kahve\n3. Espresso");
-        int kahve=scanner.nextInt();
+
+        boolean kontrol=true;
         String kahveCevap="";
-        if (kahve==1){
-            kahveCevap="Turk Kahvesi";
-        }else if(kahve==2){
-            kahveCevap="Filtre Kahve";
-        } else if (kahve==3) {
-            kahveCevap="Espresso";
-        };
+        while(kontrol){
+            scanner= new Scanner(System.in);
+            System.out.println("Hangi cesit kahve icmek istersiniz.\n1. Turk Kahvesi\n2. Filtre Kahve\n3. Espresso");
+            int kahve=scanner.nextInt();
+            if (kahve==1){
+                kahveCevap="Turk Kahvesi";
+                kontrol=false;
+            }else if(kahve==2){
+                kahveCevap="Filtre Kahve";
+                kontrol=false;
+            } else if (kahve==3) {
+                kahveCevap="Espresso";
+                kontrol=false;
+            }else{
+                System.out.println("Hatali giris yapildi");
+                kontrol=true;
+            }
+        }
+
         System.out.println("Şeker ister misiniz ? (Evet veya hayır cevabını veriniz)");
         scanner= new Scanner(System.in);
         char cevap=scanner.next().toUpperCase().charAt(0);
