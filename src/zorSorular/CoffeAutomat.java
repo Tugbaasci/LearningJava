@@ -68,7 +68,7 @@ public class CoffeAutomat {
         char sut=scanner.next().toUpperCase().charAt(0);
         String sutCevap="";
         if (sut=='E'){
-            sutCevap="Sutlu";
+            sutCevap="sutlu";
         }else if(sut=='H'){
             sutCevap="sutsuz";
         }else {
