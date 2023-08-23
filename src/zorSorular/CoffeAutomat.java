@@ -32,14 +32,14 @@ public class CoffeAutomat {
          */
         Scanner scanner= new Scanner(System.in);
 
-        boolean kontrol=true;
-        String kahveCevap="";
-        while(kontrol){
-            scanner= new Scanner(System.in);
-            System.out.println("Hangi cesit kahve icmek istersiniz.\n1. Turk Kahvesi\n2. Filtre Kahve\n3. Espresso");
-            int kahve=scanner.nextInt();
-            if (kahve==1){
-                kahveCevap="Turk Kahvesi";
+       boolean kontrol=true;
+       String kahveCevap="";
+       while(kontrol){
+           scanner= new Scanner(System.in);
+           System.out.println("Hangi cesit kahve icmek istersiniz.\n1. Turk Kahvesi\n2. Filtre Kahve\n3. Espresso");
+           int kahve=scanner.nextInt();
+           if (kahve==1){
+               kahveCevap="Turk Kahvesi";
                 kontrol=false;
             }else if(kahve==2){
                 kahveCevap="Filtre Kahve";
@@ -64,21 +64,21 @@ public class CoffeAutomat {
         }else if(cevap=='H'){
             sekerCevap="Sekersiz";
         }
-        System.out.println("Sut eklemek ister misiniz?Evet/Hayir");
-        char sut=scanner.next().toUpperCase().charAt(0);
-        String sutCevap="";
-        if (sut=='E'){
-            sutCevap="sutlu";
-        }else if(sut=='H'){
-            sutCevap="sutsuz";
-        }else {
-            System.out.println("Gecersiz giris yapildi");
-        }
-        scanner=new Scanner(System.in);
-        System.out.println("Hangi boyutta olsun? (Büyük boy - orta boy - küçük boy olarak giriniz.)");
-        String boy=scanner.nextLine();
-        System.out.println("Isleminiz degerlendiriliyor..........\n" +
-                boy+" "+sutCevap+" "+sekerCevap+" "+kahveCevap+"'niz hazir.\nAfiyet olsun !!! ");
+       System.out.println("Sut eklemek ister misiniz?Evet/Hayir");
+       char sut=scanner.next().toUpperCase().charAt(0);
+       String sutCevap="";
+       if (sut=='E'){
+           sutCevap="sutlu";
+       }else if(sut=='H'){
+           sutCevap="sutsuz";
+       }else {
+           System.out.println("Gecersiz giris yapildi");
+       }
+       scanner=new Scanner(System.in);
+       System.out.println("Hangi boyutta olsun? (Büyük boy - orta boy - küçük boy olarak giriniz.)");
+       String boy=scanner.nextLine();
+       System.out.println("Isleminiz degerlendiriliyor..........\n" +
+               boy+" "+sutCevap+" "+sekerCevap+" "+kahveCevap+"'niz hazir.\nAfiyet olsun !!! ");
 
     }
 
