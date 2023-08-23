@@ -1,4 +1,4 @@
-package javaPractice;
+package javaPractice.day7;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,7 +22,51 @@ public class isimleriListedenSonIndextenYaz {
             yeniList.add(isim.get(i));
             System.out.println((yeniList.indexOf(isim.get(i))+1)+".isim:"+isim.get(i));
         }
-        long sayi =132245336;
+
+        System.out.println("-----------------------------------------------------------");
+
+        List<String> isimListe= new ArrayList<>();
+        isimListe.add("ali");
+        isimListe.add("veli");
+        isimListe.add("canan");
+        isimListe.add("cavidan");
+        isimListe.add("kaan");
+        List<String> tersList=new ArrayList<>();
+        for (int i = isimListe.size()-1; i >=0 ; i--) {
+            tersList.add(isimListe.get(i));
+            System.out.println((isimListe.size()-i)+".isim: "+isimListe.get(i));//burayi farkli cozmusum
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
