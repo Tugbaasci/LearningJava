@@ -79,7 +79,8 @@ public class CoffeAutomatCozum2 {
      */
 
         System.out.println("Hangi boyutta olsun?\n(Buyuk boy - orta boy - kucuk boy olarak giriniz.)");
-        scanner=new Scanner(System.in);
+        //scanner=new Scanner(System.in); bu da ise yariyor
+        scanner.nextLine();//bu da yukardaki ve bu atlamayi onluyor
         kahveBoyu= scanner.nextLine();
         if (!kahveBoyu.equalsIgnoreCase("buyuk boy")&&
         !kahveBoyu.equalsIgnoreCase("orta boy")&&
